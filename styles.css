@@ -12,7 +12,7 @@ body {
   --secondary-text-color: #5c5c62;
   --durability-text-color: #6a737d9c;
   --icon-color: #6a737d;
-  --border-color: #ff9a0045;
+  --border-color: #000f45;
   --text-decoration-color: #ff9a00;
 }
 
@@ -87,7 +87,7 @@ body {
 .contact-info__block {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  /* justify-content: space-between; */
 }
 
 .contact-info__block--center {
@@ -161,6 +161,15 @@ body {
   text-align: center;
   margin-bottom: 15px;
 }
+.port {
+  text-transform: lowercase;
+}
+
+.port a {
+  text-transform: uppercase;
+  color: var(--text-decoration-color);
+  font-weight: 900;
+}
 
 .skills__text {
   color: var(--secondary-text-color);
@@ -217,6 +226,7 @@ body {
 
 .additional-info {
   flex: 1 1 40%;
+  margin: 0 0.5rem;
 }
 
 .additional-info__education {
